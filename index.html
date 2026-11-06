@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dra. Fernanda Alencar · E-books</title>
+    <meta
+      name="description"
+      content="Materiais digitais da Dra. Fernanda Alencar, nutricionista: batidas proteicas, almoços anti-delivery e lanches escolares."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="hub-page">
+    <a class="skip-link" href="#produtos">Ir para os produtos</a>
+
+    <div class="hub-bg">
+      <header class="hub-head">
+        <p class="hub-badge"><span class="hub-badge-dot" aria-hidden="true"></span> Material digital oficial</p>
+        <h1>Dra. Fernanda Alencar</h1>
+        <p class="hub-lead">
+          Nutricionista — receitas práticas para sua rotina. Escolha o e-book e veja a oferta completa.
+        </p>
+        <!-- Opcional: troque por foto — <img class="hub-avatar" src="..." width="88" height="88" alt="Dra. Fernanda Alencar"> -->
+        <div class="hub-avatar" role="img" aria-label="Iniciais Dra. Fernanda Alencar">FA</div>
+      </header>
+
+      <nav id="produtos" class="hub-list" aria-label="Produtos">
+        <a class="hub-row hub-row--batidas" href="batidas.html">
+          <img
+            class="hub-cover"
+            src="assets/covers/cover-batidas.svg"
+            width="72"
+            height="72"
+            alt=""
+          />
+          <div class="hub-row-body">
+            <p class="hub-row-tag">E-book</p>
+            <h2 class="hub-row-title">120 Batidas proteicas</h2>
+            <p class="hub-row-desc">No copo · práticas e econômicas</p>
+          </div>
+          <span class="hub-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+          </span>
+        </a>
+
+        <a class="hub-row hub-row--receitas" href="receitas.html">
+          <img
+            class="hub-cover"
+            src="assets/covers/cover-receitas.svg"
+            width="72"
+            height="72"
+            alt=""
+          />
+          <div class="hub-row-body">
+            <p class="hub-row-tag">E-book</p>
+            <h2 class="hub-row-title">200 Receitas para almoço</h2>
+            <p class="hub-row-desc">Anti Ifood · marmitas e pratos do dia a dia</p>
+          </div>
+          <span class="hub-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+          </span>
+        </a>
+
+        <a class="hub-row hub-row--lanches" href="lanches.html">
+          <img
+            class="hub-cover"
+            src="assets/covers/cover-lanches.svg"
+            width="72"
+            height="72"
+            alt=""
+          />
+          <div class="hub-row-body">
+            <p class="hub-row-tag">E-book</p>
+            <h2 class="hub-row-title">75 Lanches escolares</h2>
+            <p class="hub-row-desc">Lancheira organizada · menos gasto na cantina</p>
+          </div>
+          <span class="hub-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+          </span>
+        </a>
+      </nav>
+
+      <p class="hub-foot"><strong>PDF</strong> · Acesso imediato após a compra · Compra segura · Kiwify</p>
+    </div>
+
+    <footer class="site-footer">
+      <p>© <span id="y"></span> Dra. Fernanda Alencar · Nutricionista</p>
+    </footer>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
