@@ -440,7 +440,7 @@ section h2 {
   flex: 0 0 min(260px, 78vw);
   scroll-snap-align: start;
   border-radius: var(--radius-lg);
-  min-height: 160px;
+  min-height: 200px;
   padding: 1.15rem 1rem;
   color: #fff;
   display: flex;
@@ -451,19 +451,28 @@ section h2 {
   box-shadow: var(--shadow);
 }
 
+.carousel__slide__media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
 .carousel__slide strong {
   font-size: 1rem;
   font-weight: 800;
   line-height: 1.25;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .carousel__slide span {
   font-size: 0.78rem;
   opacity: 0.92;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .carousel__slide::after {
@@ -471,7 +480,8 @@ section h2 {
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.75));
-  z-index: 0;
+  z-index: 1;
+  pointer-events: none;
 }
 
 .carousel-hint {
